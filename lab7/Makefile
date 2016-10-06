@@ -1,0 +1,10 @@
+lab7: main.o BST.o
+	g++ -o lab7 main.cpp BST.h
+
+main.o: main.cpp
+	g++ -c main.cpp
+BST.o:BST.h
+	g++ -c BST.h
+
+clean: 
+	rm *.o core
